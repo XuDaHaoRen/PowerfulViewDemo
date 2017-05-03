@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xbl.activity.MainActivity">
+    <com.chaychan.viewlib.PowerfulEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="自带删除功能的输入框(默认删除图标)"
+        app:funcType="canClear"
+        />
+
+    <com.chaychan.viewlib.PowerfulEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="自带删除功能的输入框"
+        app:funcType="canClear"
+        app:rightDrawableHeight="25dp"
+        app:rightDrawableWidth="25dp"
+        android:drawableRight="@drawable/select_clean_icon"
+        />
+    <com.chaychan.viewlib.PowerfulEditText
+        android:layout_width="wrap_content"
+        android:hint="密文格式(默认图标)"
+        android:ems="10"
+        app:funcType="canWatchPwd"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"
+
+        />
+    <com.chaychan.viewlib.PowerfulEditText
+        android:id="@+id/last_edt"
+        android:layout_width="wrap_content"
+        android:hint="密文格式"
+        android:ems="10"
+        app:funcType="canWatchPwd"
+        android:layout_height="wrap_content"
+        app:eyeOpen="@drawable/eye_open"
+        android:inputType="textPassword"
+        app:eyeClose="@drawable/eye_close"
+
+        />
+
+</LinearLayout>
